@@ -1,0 +1,277 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*header*/
+
+.header
+{
+    background-color: rgb(247, 104, 9);
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+}
+strong
+{
+    color: white;
+}
+h1
+{
+    margin-left: 50px;
+    padding-top: 20px;
+    font-size: 3em;
+}
+.nav ul
+{
+    display: flex;
+    list-style: none;
+    margin-left: 700px;
+    margin-top: -30px;
+}
+.nav ul li
+{
+  padding-left: 20px;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.nav ul li a
+{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*first*/
+
+.first
+{
+    text-align: center;
+}
+span
+{
+    color: #FA500F;
+}
+.cs
+{
+    background-image: linear-gradient(#000000bf,#000000bf), url(image/trua.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    min-height: 80vh;
+    color: #fff;
+    padding: 5px 0px;
+}
+.container
+{
+    margin: auto;
+    text-align: center;
+}
+.cs-content
+{
+    max-width: 760px;
+    margin: auto;
+    padding: 25px 30px;
+}
+.site-logo
+{
+    margin: 22px 0px;
+}
+.site-logo a
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+.site-logo a span
+{
+    color: #FA500F;
+}
+.cs-content h1
+{
+   font-size: 60px;
+   font-weight: 900;
+}
+.cs-content p
+{
+    margin: 10px 35px;
+}
+.form
+{
+    margin: 50px 0px;
+}
+.form input
+{
+    background: #ffffff85;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    outline: none;
+    margin: 5px 0px;
+    padding: 20px;
+    width: 67%;
+    border-radius: 5px;
+}
+.email-field::placeholder
+{
+    color: #fff;
+}
+.form input[type="submit"]
+{
+    width: 120px;
+    background: #FA500F;
+    color: #fff;
+    cursor: pointer;
+}
+.countdown-timer
+{
+    margin: 35px 0px;
+}
+.timer-item
+{
+    display: inline-block;
+    background: #FA500F;
+    margin: 5px 3px;
+    padding: 20px;
+    min-width: 120px;
+    font-size: 50px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.timer-item span
+{
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+@media screen and (max-width: 767px){
+    .nav{
+        display: none;
+    }
+    .site-logo{
+        margin-bottom: 50px;
+    }
+    .cs-content h1{
+        font-size: 50px;
+    }
+    .cs-content p{
+        line-height: 26px;
+        margin: 10px 0px;
+    }
+    .form input[type="email"]{
+        width: 50%;
+    }
+}
+ 
+/*cercle*/
+.cercle
+{
+    background: #000;
+    position: relative;
+    padding: 50px;
+    margin-top: 20px;
+}
+.circle
+{
+    position: relative;
+    overflow: hidden;
+}
+.circle img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.circle.circle1
+{
+    width: 500px;
+    height: 500px;
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+}
+.circle.circle2
+{
+    width: 300px;
+    height: 300px;
+    float: right;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+}
+.cercle h1
+{
+    color: #fff;
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+.cercle p
+{
+    color: #fff;
+}
+
+/*photo*/
+.gal
+{
+    width: 100%;
+   margin-left: -26px;
+
+ 
+}
+.gal h1
+{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 4em;
+    background-image: url("image/yes.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.grille
+{
+    padding-top: 100px;
+	max-width: 1300px;
+	width: 80%;
+	height: auto;
+	margin: 30px 135px 40px auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 300px);
+	justify-content: center;
+	grid-gap: 20px;
+}
+.grid-item
+{
+	width: 250px;
+	height: 250px; 
+	background: rgb(221, 219, 219);
+	transition: 1s;
+	margin-bottom: 50px;
+	border-radius: 5%;
+	box-shadow: 2px 6px 6px rgb(221, 219, 219);
+	
+}	
+.grid-item img
+{
+	border-radius: 5%;
+}
+.grid-item:hover img
+{
+	border-radius: 0%;
+}
+.grid-item:hover
+{
+   transform: scale(1.2);
+   z-index: 2;
+   border-radius: 0%;
+}
